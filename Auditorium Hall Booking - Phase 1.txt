@@ -63,19 +63,6 @@ int main()
             printf("Hall booked with S.No. %d\n", count);
             break;
 
-        case 2:
-            if (count == 0) {
-                printf("No bookings yet.\n");
-                break;
-            }
-            printf("\n%-6s %-20s %-20s %-11s %-4s\n", "S.No.", "Organiser", "Event", "Date", "Slot");
-            printf("-------------------------------------------------------------------\n");
-            for (i = 0; i < count; i++) {
-                printf("%-6d %-20s %-20s %-11s %-4d\n",
-                       i + 1, organiser[i], event[i], date[i], slot[i]);
-            }
-            break;
-
         case 3:
             printf("Enter date (DD-MM-YYYY): ");
             scanf("%10s", d);
